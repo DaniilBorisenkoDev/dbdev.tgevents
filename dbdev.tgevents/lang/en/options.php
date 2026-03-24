@@ -10,13 +10,16 @@ $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_ACTIVE"] = "The module is active";
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_URL"] = "Path to the site root";
 
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_GROUP2"] = "Telegram settings";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_1"] = "To get the chat/group/channel ID, you can use bots, for example " .
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_1"] = "The <b>Endpoint API Telegram</b> field is populated only when a " .
+    "user-defined API implementation is utilized. The default value is: \"https://api.telegram.org/bot\"";
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_2"] = "To get the chat/group/channel ID, you can use bots, for example " .
     "Get My ID. Group chats usually start with a \"-\" sign, and super groups with \"-100\"";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_2"] = "If you need to send a message to a specific topic in a group, " .
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_3"] = "If you need to send a message to a specific topic in a group, " .
     "specify its ID separated by a colon. For example: -1002223334445:1234";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_3"] = "To send a test message, click on the button, having previously " .
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_4"] = "To send a test message, click on the button, having previously " .
     "saved the settings: #BUTTON#";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_3_1"] = "Send";
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_4_1"] = "Send";
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_ENDPOINT"] = "Endpoint API Telegram";
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_TOKEN"] = "Telegram bot Token";
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_ADMINS"] = "List of chats to send (comma separated)";
 

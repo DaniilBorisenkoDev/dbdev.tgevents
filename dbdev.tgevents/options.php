@@ -63,10 +63,16 @@ if ($USER->IsAdmin()) :
 
                 /** Group 2 */
                 Loc::getMessage("DBDEV_TGEVENTS_OPTIONS_TAB1_GROUP2"),
-                $noteHelperFunction(["2_1", "2_2", "2_3"], ["2_3" => [
+                $noteHelperFunction(["2_1", "2_2", "2_3", "2_4"], ["2_4" => [
                     "#BUTTON#" =>
                         "<button class=\"adm-btn adm-btn-save\" name=\"send-tg-example\" value=\"1\">" .
-                        Loc::getMessage("DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_3_1") . "</button>"]]),
+                        Loc::getMessage("DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_4_1") . "</button>"]]),
+                [
+                    "ENDPOINT",
+                    Loc::getMessage("DBDEV_TGEVENTS_OPTIONS_TAB1_ENDPOINT"),
+                    $arModuleDefaultConfiguration["ENDPOINT"] ?? "",
+                    ["text", 70]
+                ],
                 [
                     "TOKEN",
                     Loc::getMessage("DBDEV_TGEVENTS_OPTIONS_TAB1_TOKEN"),

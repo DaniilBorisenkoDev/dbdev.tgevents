@@ -10,13 +10,16 @@ $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_ACTIVE"] = "Модуль активен";
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_URL"] = "Путь до корня сайта";
 
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_GROUP2"] = "Настройки Telegram";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_1"] = "Для получения идентификатора чата/группы/канала можно " .
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_1"] = "Поле <b>Endpoint API Telegram</b> нужно заполнять в случае " .
+    "использования пользовательской реализации API. Значение по умолчанию: \"https://api.telegram.org/bot\"";
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_2"] = "Для получения идентификатора чата/группы/канала можно " .
     "воспользоваться ботами, например Get My ID. Чаты групп обычно начинаются со знака \"-\", а супер-групп с \"-100\"";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_2"] = "Если необходимо отправить сообщение в конкретный топик группы, " .
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_3"] = "Если необходимо отправить сообщение в конкретный топик группы, " .
     "укажите его ID через двоеточие. Например: -1002223334445:1234";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_3"] = "Для отправки тестового сообщения, нажмите на кнопку, предварительно " .
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_4"] = "Для отправки тестового сообщения, нажмите на кнопку, предварительно " .
     "сохранив настройки: #BUTTON#";
-$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_3_1"] = "Отправить";
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_NOTE_2_4_1"] = "Отправить";
+$MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_ENDPOINT"] = "Endpoint API Telegram";
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_TOKEN"] = "Токен Telegram бота";
 $MESS["DBDEV_TGEVENTS_OPTIONS_TAB1_ADMINS"] = "Список чатов для отправки (через запятую)";
 

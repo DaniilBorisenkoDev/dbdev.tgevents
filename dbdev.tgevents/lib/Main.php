@@ -252,6 +252,10 @@ class Main
         } elseif (empty($adminsId = self::getOption("ADMINS"))) {
             $error = Loc::getMessage("DBDEV_TGEVENTS_LIB_MAIN_TG_MISSING_ADMINS");
         } else {
+            $endpoint = trim(self::getOption("ENDPOINT"));
+            if (!strlen($endpoint)) {
+                $endpoint = "https://api.telegram.org/bot";
+            }
             $arAdmins = explode(",", $adminsId);
             foreach ($arAdmins as $adminId) {
                 if ((strpos($adminId, ":")) !== false) {
@@ -280,8 +284,10 @@ class Main
                 }
 
                 $httpClient = new HttpClient();
-                $response = $httpClient->get("https://api.telegram.org/bot$token/sendMessage?" .
-                    http_build_query($arRequest));
+                $response = $httpClient->get(
+                    $endpoint . $token . "/sendMessage?" .
+                    http_build_query($arRequest, encoding_type: PHP_QUERY_RFC3986)
+                );
                 if ($response) {
                     $arResponse = json_decode($response, true);
                     if (isset($arResponse["ok"])) {
